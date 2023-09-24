@@ -1,0 +1,13 @@
+{
+   "name": "unique-number",
+   "version": "1.0.0",
+   "description": "",
+   "main": "script.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "new-folder": "bash -c \"echo 'Please input a folder name:' && read input_text && mkdir $input_text && touch $input_text/script.js && echo 'Folder \\\"'$input_text'\\\" created!' && echo \\\"'use strict'\\\" > $input_text/script.js\""
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC"
+}
