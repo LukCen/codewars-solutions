@@ -1,16 +1,16 @@
-"use strict";
+'use strict'
 
-function isPangram(string) {
-   let clear = string.replaceAll(" ", "").toLowerCase();
-   const alphabet = "abcdefghijklmnopqrstuvwxyz";
+function isPangram (string) {
+  const clear = string.replaceAll(' ', '').toLowerCase()
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
-   for (let i = 0; i < alphabet.length; i++) {
-      if (!clear.includes(alphabet.charAt(i))) {
-         return false;
-      }
-   }
+  for (let i = 0; i < alphabet.length; i++) {
+    if (!clear.includes(alphabet.charAt(i))) {
+      return false
+    }
+  }
 
-   return true;
+  return true
 }
 
 /**

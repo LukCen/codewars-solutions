@@ -1,9 +1,9 @@
-let test = "teststring";
+const test = 'teststring'
 
-function replacer(string) {
-   let arrayfied = test.split("");
+function replacer (string) {
+  const arrayfied = test.split('')
 
-   arrayfied.forEach((elem) => {});
+  arrayfied.forEach((elem) => {})
 }
 
-console.log(replacer(test));
+console.log(replacer(test))

@@ -1,22 +1,22 @@
-"use strict";
+'use strict'
 
-let text = "The sunset sets at twelve o' clock.";
+const text = "The sunset sets at twelve o' clock."
 
-function alphabetPosition(text) {
-   const pattern = /[^a-zA-z]/gi;
-   let arrayfied = text.replace(pattern, "").toLowerCase().trim();
-   const alphabet = "abcdefghijklmnopqrstuvwxyz";
-   let positions = [];
-   for (let i = 0; i < arrayfied.length - 1; i++) {
-      if (alphabet.includes(arrayfied[i])) {
-         positions.push(alphabet.indexOf(arrayfied[i]) + 1);
-      }
-   }
-   //    return positions.join(" ");
-   return positions;
+function alphabetPosition (text) {
+  const pattern = /[^a-zA-z]/gi
+  const arrayfied = text.replace(pattern, '').toLowerCase().trim()
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  const positions = []
+  for (let i = 0; i < arrayfied.length - 1; i++) {
+    if (alphabet.includes(arrayfied[i])) {
+      positions.push(alphabet.indexOf(arrayfied[i]) + 1)
+    }
+  }
+  //    return positions.join(" ");
+  return positions
 }
 
-console.log(alphabetPosition(text));
+console.log(alphabetPosition(text))
 
 /**
  * used regexp here to specify a pattern - this matches everything that ISN'T a lower/uppercase letter.

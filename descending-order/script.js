@@ -1,7 +1,7 @@
 'use strict'
-function descendingOrder(n){
-    let arrayfied = n.toString().split("").sort((a,b) => b-a).join("")
-    return parseInt(arrayfied)
+function descendingOrder (n) {
+  const arrayfied = n.toString().split('').sort((a, b) => b - a).join('')
+  return parseInt(arrayfied)
 }
 
 /**

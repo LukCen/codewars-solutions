@@ -1,14 +1,14 @@
-"use strict";
-function expandedForm(num) {
-   let arrayfied = num.toString().split("");
-   let digits = [];
+'use strict'
+function expandedForm (num) {
+  const arrayfied = num.toString().split('')
+  const digits = []
 
-   for (let i = 0; i < arrayfied.length; i++) {
-      if (arrayfied[i] > 0) {
-         digits.push(arrayfied[i] * Math.pow(10, arrayfied.length - 1 - i));
-      }
-   }
-   return digits.join(" + ");
+  for (let i = 0; i < arrayfied.length; i++) {
+    if (arrayfied[i] > 0) {
+      digits.push(arrayfied[i] * Math.pow(10, arrayfied.length - 1 - i))
+    }
+  }
+  return digits.join(' + ')
 }
 
 /**
