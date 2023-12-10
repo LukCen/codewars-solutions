@@ -1,7 +1,7 @@
 'use strict'
 
 function generateHashtag (str) {
-  if (str !== '' && str.trim().length > 0 && str.length <= 140) {
+  if (str !== '' && str.trim().length > 0) {
     const arrayfied = str.split(' ')
     const result = []
     arrayfied.forEach((e) => {
